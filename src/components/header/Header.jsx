@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import img1 from '../../img/photo1-mobile.png';
-import img2 from '../../img/photo1-desktop.png'
+import img2 from '../../img/photo1-desktop.png';
 
 const Header = () => {
     return (
