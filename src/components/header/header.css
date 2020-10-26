@@ -5,13 +5,14 @@ header{
     height: 300px;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: auto;
     padding: 2%;
 }
 
 .top-bar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-bar>h1{
@@ -22,6 +23,11 @@ header{
     line-height: 1.5rem;
     color: #994D5B;
     margin-top: 0;
+    margin-left: 5%;
+}
+
+nav{
+    display: none;
 }
 
 .top-bar>h1>span{
@@ -31,6 +37,7 @@ header{
 .info-container{
     display: flex;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
 .info>h2{
@@ -74,5 +81,67 @@ header{
 }
 
 
+@media (min-width:600px){
+    header{
+        background-image: url('../../img/back-desktop.png');
+        height: 800px;
+        background-size: 100%;
+        background-position: top;
+    }
 
+    .top-bar>h1{
+        margin-left: 10%;
+        margin-bottom: 0;
+    }
 
+    nav{
+        width: 40%;
+    }
+    nav>ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+    }
+    
+    nav>ul>li{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #828282;
+        list-style: none;
+    }
+
+    nav>ul>li:hover{
+        text-decoration: underline #994D5B;
+    }
+
+    .info-container{
+        justify-content: space-evenly;
+    }
+
+    .info{
+        margin-left: 10%;
+    }
+
+    .info>h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-top: 30%;
+    }
+
+    .info>h3{
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+    }
+
+    .info>button{
+        font-size: 1rem;
+    }
+
+    .info>button:hover{
+    background-color: #994D5B;
+    color: #FFFFFF;
+    }
+}

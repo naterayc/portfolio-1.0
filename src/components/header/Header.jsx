@@ -8,7 +8,13 @@ const Header = () => {
         <header>
             <div className='top-bar'>
                 <h1> &#60; Naterayc <span>&#47;&#62;</span></h1>
-
+                <nav>
+                    <ul>
+                        <li>Proyectos</li>
+                        <li>Sobre mí</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
             </div>
             <div className='info-container'>
                 <div className="info">
