@@ -18,13 +18,13 @@ const Header = () => {
 
     const closeAside = () => {
         asideMenu.current.classList.remove('active');
-        //asideMenu.current.classList.add('hide');
     }
+
     return (
         <header>
             <div className='top-bar'>
-                <h1> &#60; Naterayc <span>&#47;&#62;</span></h1>
                 <Icon icon={menuIcon} onClick={openAside}/>
+                <h1> &#60; Naterayc <span>&#47;&#62;</span></h1>
                 <nav>
                     <ul>
                         <li>Proyectos</li>

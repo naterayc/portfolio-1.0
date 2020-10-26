@@ -1,0 +1,53 @@
+.tech-container{
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tech{
+    width:90px;
+    box-sizing: border-box;
+    padding: 2%;
+    text-align: center;
+}
+
+.tech>svg{
+    color: #4F4F4F;
+    font-size: 1.7rem;
+}
+
+.tech>p{
+    margin-top: 1%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #A35D6A;
+}
+
+@media (min-width:600px){
+    .tech-container{
+        grid-template-columns: auto auto auto auto;
+        margin: 5% auto 0;
+    }
+
+    .tech{
+        width:87.42px;
+    }
+
+    .tech>svg{
+        font-size: 2rem;
+    }
+
+    .tech>svg:hover{
+        color:#A35D6A;
+    }
+
+    .tech>p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,73 @@
+.about-container{
+    background-color: #F2EAD3;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.about-container>h3{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #994D5B;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.photo-contact{
+    display: none;
+}
+
+.about-info{
+    padding: 0 10%;
+}
+.about-info>p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #4A4747;
+    }
+
+@media (min-width:600px){
+    .about-container>h3{
+        font-size: 1.5rem;
+    }
+    .about-info{
+        margin-left: 10%;
+        width: 50%;
+        padding: 0;
+    }
+
+    .photo-contact{
+        display: block;
+    }
+
+    .photo-contact>div{
+        text-align: center;
+    }
+
+    .photo-contact>div>svg{
+        font-size: 2rem;
+        color: #4F4F4F;
+        margin-left: 5%;
+    }
+
+    .about-info>p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #4A4747;
+    }
+}

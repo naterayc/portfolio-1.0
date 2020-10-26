@@ -1,0 +1,51 @@
+.soft-container{
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 15% auto 0;
+}
+
+.soft{
+    width:80%;
+    box-sizing: border-box;
+    padding: 2%;
+    text-align: center;
+}
+
+.soft>svg{
+    color: #4F4F4F;
+    font-size: 1.7rem;
+}
+
+.soft>p{
+    margin-top: 1%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #A35D6A;
+}
+
+@media (min-width:600px){
+    .soft-container{
+        grid-template-columns: auto auto auto auto;
+        margin: 8% auto 0;
+    }
+
+    .soft>svg{
+        font-size: 2rem;
+    }
+
+    .soft>svg:hover{
+        color:#A35D6A;
+    }
+
+    .soft>p{
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,40 @@
+.contact-container{
+    width:90%;
+    padding: 5%;
+}
+
+.contact-container>h3{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #994D5B;
+    text-align: center;
+}
+
+.contact-container>div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8% auto;
+}
+
+.contact-container>div>svg{
+    color:#4A4747;
+    font-size: 2rem;
+}
+
+@media (min-width:600px){
+
+    .contact-container>h3{
+        font-size: 1.5rem;
+    }
+    .contact-container>div>svg{
+        font-size: 2.5rem;
+    }
+
+    .contact-container>div>svg:hover{
+        color:#994D5B;
+    }
+}
