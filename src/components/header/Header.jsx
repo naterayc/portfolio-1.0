@@ -5,10 +5,10 @@ import img2 from '../../img/photo1-desktop.png';
 import { Icon } from '@iconify/react';
 import menuIcon from '@iconify/icons-feather/menu';
 import xIcon from '@iconify/icons-feather/x';
+import { Link } from 'react-scroll';
 
 
-
-const Header = () => {
+const Header = (props) => {
 
     const asideMenu = useRef(null);
 
@@ -27,18 +27,18 @@ const Header = () => {
                 <h1> &#60; Naterayc <span>&#47;&#62;</span></h1>
                 <nav>
                     <ul>
-                        <li>Proyectos</li>
-                        <li>Sobre mí</li>
-                        <li>Contacto</li>
+                        <li><Link to="projects" smooth={true} >Proyectos</Link></li>
+                        <li><Link to="about" smooth={true} >Sobre mí</Link></li>
+                        <li><Link to="contact" smooth={true} >Contacto</Link></li>
                     </ul>
                 </nav>
             </div>
             <div className="aside" ref={asideMenu}>
                 <Icon icon={xIcon} onClick={closeAside} />
                 <ul>
-                    <li>Proyectos</li>
-                    <li>Sobre mí</li>
-                    <li>Contacto</li>
+                    <li><Link to="projects" smooth={true} onClick={closeAside}>Proyectos</Link></li>
+                    <li><Link to="about" smooth={true} onClick={closeAside}>Sobre mí</Link></li>
+                    <li><Link to="contact" smooth={true} onClick={closeAside}>Contacto</Link></li>
                 </ul>
             </div>
             <div className='info-container'>
@@ -46,7 +46,7 @@ const Header = () => {
                     <h2>¡Hola, soy Yndira Natera!</h2>
                     <h3>Desarrolladora Front-end</h3>
                     <h3>e Ingeniero electricista.</h3>
-                    <button type='button'>Proyectos</button>
+                    <Link to="projects" smooth={true} ><button type='button'>Proyectos</button></Link>
                 </div>
                 <picture>
                     <source srcSet={img2} media='(min-width:600px)' />

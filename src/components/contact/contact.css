@@ -4,14 +4,23 @@
 }
 
 .contact-container>h3{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     text-align: center;
-    text-decoration-line: underline;
     color: #994D5B;
     text-align: center;
+}
+
+.contact-container>p{
+    margin: auto 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #4A4747;
 }
 
 .contact-container>div{
@@ -20,9 +29,62 @@
     margin: 8% auto;
 }
 
-.contact-container>div>svg{
+.contact-container>div>button{
+    border:none;
+    background: none;
     color:#4A4747;
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+
+.contact-container>div> a svg{
+    color:#4A4747;
+    font-size: 3rem;
+}
+
+.email-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-options>a{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #4A4747;
+    text-decoration: none;
+}
+
+#root > div:nth-child(4) > div > div.email-options > div > span{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #4A4747;
+    text-decoration: none;
+}
+
+#root > div:nth-child(4) > div > div.email-options > div > span > div >svg{
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.email-options>div{
+    width:30%;
+    text-align: center;
+}
+
+.email-options>a{
+    width: 28%;
+    text-align: center;
+}
+
+.contact-container>div>button:focus{
+    outline: none;
 }
 
 @media (min-width:600px){
@@ -30,11 +92,36 @@
     .contact-container>h3{
         font-size: 1.5rem;
     }
-    .contact-container>div>svg{
-        font-size: 2.5rem;
+
+    .contact-container>div>button{
+        font-size: 3.5rem
     }
 
-    .contact-container>div>svg:hover{
+    .contact-container>div> a svg{
+        font-size: 3.5rem;
+    }
+
+    .contact-container>p{
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+    }
+
+    .contact-container>div>button:hover{
+        color:#994D5B;
+        cursor:pointer;
+    }
+
+    .contact-container>div> a svg:hover{
+        color:#994D5B;
+        cursor:pointer;
+    }
+
+    .email-options>div:hover{
+        cursor: pointer;
+    }
+
+    .email-options>div>span > div >svg:hover{
         color:#994D5B;
     }
+
 }

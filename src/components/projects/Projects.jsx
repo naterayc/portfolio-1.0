@@ -1,39 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import cptPreview from '../../img/cpt-preview.png';
-import cptPreviewD from '../../img/cpt-preview-d.png';
 import bqPreview from '../../img/bq-preview.png';
-import bqPreviewD from '../../img/bq-preview-d.png';
 import nomadaPreview from '../../img/nomada-preview.png';
-import nomadaPreviewD from '../../img/nomada-preview-d.png';
+import coverCPT from '../../img/cover-cpt.png';
+import coverBQ from '../../img/cover-bq.png';
+import coverNomada from '../../img/cover-nomada.png';
+import ModalCPT from './ModalCPT';
 
 const Projects = () => {
+
+    const [showModal, setShowModal] = useState(false);
+    const [imgModal, setImgModal] = useState(undefined);
+    const [titleModal, setTitleModal] = useState(undefined);
+    const [projectInfo, setProjectInfo] = useState(undefined);
+    const [usedTecnologies, setUsedTecnologies] = useState(undefined);
+    const [linkToDemo, setLinkToDemo] = useState(undefined);
+    const [linkToCode, setLinkToCode] = useState(undefined);
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+    const openModal = (e) => {
+        if (e.target.alt === 'Comida para todos'){
+            setTitleModal('Proyecto Comida para todos');
+            setImgModal(coverCPT);
+            setProjectInfo('Rediseño del sitio web de la organización social Comida para todos. Realizado en conjunto con un equipo UX designer. Desarrollado con');
+            setUsedTecnologies('React, Javascript y CSS');
+            setLinkToDemo('https://comida-para-todos.netlify.app/');
+            setLinkToCode('https://github.com/naterayc/Comida-para-todos/tree/master');
+        }
+
+        if(e.target.alt === 'Burger Queen'){
+            setTitleModal('Proyecto Burguer Queen');
+            setImgModal(coverBQ);
+            setProjectInfo('Desarrollo de software gastronómico para restaurante de hamburgesas. Realizado en su totalidad por un equipo Front-end. Desarrollado con');
+            setUsedTecnologies('React, Firebase, Javascript y CSS');
+            setLinkToDemo('https://burguer-queen.netlify.app/');
+            setLinkToCode('https://github.com/naterayc/burger-queen');
+        }
+
+        if(e.target.alt === 'Nómada'){
+            setTitleModal('Proyecto Red social');
+            setImgModal(coverNomada);
+            setProjectInfo('Nómada, una red social para viajeros. Realizado en su totalidad por un equipo Front-end. Desarrollado con');
+            setUsedTecnologies('Firebase, Javascript y CSS');
+            setLinkToDemo('https://naterayc.github.io/SCL014-social-network/');
+            setLinkToCode('https://github.com/naterayc/SCL014-social-network');
+        }
+        
+        setShowModal(true);
+    };
+
     return (
         <div className="projects-section">
             <h3>Proyectos</h3>
             <div className="projects-container">
-                <div>
+                <div onClick={openModal} >
                     <picture>
-                        <source srcSet={cptPreviewD} media='(min-width:600px)' />
-                        <source srcSet={cptPreview} media='(max-width:601px)' />
+                        <source srcSet={cptPreview}  />
                         <img source={cptPreview} alt="Comida para todos" />
                     </picture>
                 </div>
-                <div>
+                <div onClick={openModal} >
                     <picture>
-                        <source srcSet={bqPreviewD} media='(min-width:600px)' />
-                        <source srcSet={bqPreview} media='(max-width:601px)' />
+                        <source srcSet={bqPreview}  />
                         <img source={bqPreview} alt="Burger Queen" />
                     </picture>
                 </div>
-                <div>
+                <div onClick={openModal}>
                     <picture>
-                        <source srcSet={nomadaPreviewD} media='(min-width:600px)' />
-                        <source srcSet={nomadaPreview} media='(max-width:601px)' />
+                        <source srcSet={nomadaPreview} />
                         <img source={nomadaPreview} alt="Nómada" />
                     </picture>
                 </div>
             </div>
+            {showModal === false ? null : 
+                <ModalCPT close={closeModal} 
+                    img={imgModal} 
+                    title={titleModal} 
+                    info={projectInfo}
+                    tecnologies={usedTecnologies}
+                    demo={linkToDemo}
+                    code={linkToCode}/>}
         </div>
     );
 }

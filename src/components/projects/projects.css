@@ -3,13 +3,12 @@
 }
 
 .projects-section>h3{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.375rem;
     text-align: center;
-    text-decoration-line: underline;
     color: #994D5B;
 }
 
@@ -25,6 +24,10 @@
     transition: all .3s;
 }
 
+.projects-container>div>picture>img{
+    width:80%;
+}
+
 .projects-container>div:hover{
     padding: 1%;
 }
@@ -37,5 +40,9 @@
     .projects-container{
         display: flex;
         justify-content: space-between;
+    }
+
+    .projects-container>div>picture>img{
+        width:100%;
     }
 }
