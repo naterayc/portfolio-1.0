@@ -5,7 +5,7 @@ import './modal.css';
 
 const ModalCPT = (props) => {
     return (
-        <div className="modal-container">
+        <div className="modal-container" onClick={props.close}>
             <div className="modal-content">
                 <Icon icon={xIcon} onClick={props.close} />
                 <h3>{props.title}</h3>

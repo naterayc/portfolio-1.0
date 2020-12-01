@@ -146,17 +146,83 @@ nav{
     outline:none;
 }
 
+@media (min-width:440px){
+    .aside{
+        left: -500px;
+    }
+
+    header{
+        background-image: url('../../img/back-desktop.png');
+        height: 350px;
+    }
+}
+
 @media (min-width:600px){
     header{
         background-image: url('../../img/back-desktop.png');
-        height: 850px;
+        height: 700px;
+        background-size: 100%;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .top-bar>svg{
+        margin-left: 2%;
+    }
+
+    .aside{
+        left: -700px;
+    }
+
+    .top-bar>h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .info-container{
+        justify-content: space-evenly;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .info>h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-top: 30%;
+    }
+
+    .info>h3{
+        font-size: 1.3rem;
+        line-height: 1.625rem;
+    }
+
+    .info>a>button{
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+
+    .info>a button:hover{
+    background-color: #994D5B;
+    color: #FFFFFF;
+    cursor: pointer;
+    }
+
+    .info>a button:focus{
+        outline:none;
+        }
+}
+
+@media (min-width:800px){
+    header{
+        background-image: url('../../img/back-desktop.png');
+        height: 950px;
         background-size: 100%;
         background-position: top;
         background-size: cover;
     }
 
     .top-bar>h1{
-        margin-left: 10%;
+        margin-left: 5%;
         margin-bottom: 0;
     }
 
@@ -196,7 +262,7 @@ nav{
 
     .info-container{
         justify-content: space-evenly;
-        margin-top: 2%;
+        margin-top: 8%;
     }
 
     .info>h2{

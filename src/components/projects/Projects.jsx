@@ -18,8 +18,18 @@ const Projects = () => {
     const [linkToDemo, setLinkToDemo] = useState(undefined);
     const [linkToCode, setLinkToCode] = useState(undefined);
 
-    const closeModal = () => {
-        setShowModal(false);
+    const closeModal = (e) => {
+
+        const target = e.target.tagName;
+        const targetClass = e.target.className;
+
+        if(target === 'svg' || target === 'path'){
+            setShowModal(false);
+        }
+
+        if (targetClass === 'modal-container'){
+            setShowModal(false); 
+        }
     };
 
     const openModal = (e) => {

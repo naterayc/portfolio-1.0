@@ -37,6 +37,16 @@
         font-size: 1.5rem;
     }
 
+    .projects-container>div>picture>img{
+        width:70%;
+    }
+}
+
+@media (min-width:800px){
+    .projects-section>h3{
+        font-size: 1.5rem;
+    }
+
     .projects-container{
         display: flex;
         justify-content: space-between;

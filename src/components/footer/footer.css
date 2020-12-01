@@ -23,7 +23,11 @@ footer>div>p{
     text-align: center;
     color: #4F4F4F;
 }
-
+@media (min-width:440px){
+    footer{
+        background-image: url('../../img/back-footer2.png');
+    }
+}
 @media (min-width:600px){
     footer{
         background-image: url('../../img/back-footer2.png');

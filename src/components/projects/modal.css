@@ -36,7 +36,7 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
-    margin: 15% auto 0 auto;
+    margin: 10% auto 0 auto;
     color:#994D5B;
 }
 
@@ -79,6 +79,49 @@
 @media (min-width:600px){
 
     .modal-content {
+        width: 85%;
+        left: 7.5%;
+        top:15%;
+    }
+
+    .modal-content>svg{
+        right: 2%;
+    }
+
+    .modal-content>h3{
+        margin-top: 5%;
+        font-size: 1.5rem;
+    }
+
+    .modal-content>div>p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-left: 1%;
+        margin-top: 8%;
+    }
+
+    .modal-content>div{
+        display: flex;
+        align-items: center;
+        padding-right: 2%;
+    }
+
+    .btn-container>div{
+        width: 40%;
+        margin-left: 7%;
+    }
+
+    .btn-container>div>a>button:hover{
+        cursor: pointer;
+        background-color: #994D5B;
+        color: #fff;
+    }
+    
+}
+
+@media (min-width:800px){
+
+    .modal-content {
         width: 70%;
         left: 15%;
         top:15%;
@@ -107,7 +150,7 @@
 
     .btn-container>div{
         width: 40%;
-        margin-left: 5%;
+        margin-left: 7%;
     }
 
     .btn-container>div>a>button:hover{
