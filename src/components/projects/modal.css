@@ -13,9 +13,9 @@
     position: fixed;
     width: 90%;
     left: 5%;
-    top: 12%;
+    top: 4%;
     background-color: #F8F9FA;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: .5rem 1rem;
     height: -moz-fit-content;
     height: fit-content;
     display: flex;
@@ -36,7 +36,7 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
-    margin-top: 15%;
+    margin: 15% auto 0 auto;
     color:#994D5B;
 }
 
@@ -81,6 +81,7 @@
     .modal-content {
         width: 70%;
         left: 15%;
+        top:15%;
     }
 
     .modal-content>svg{
