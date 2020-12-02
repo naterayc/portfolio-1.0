@@ -43,7 +43,7 @@ const Projects = () => {
         }
 
         if(e.target.alt === 'Burger Queen'){
-            setTitleModal('Proyecto Burguer Queen');
+            setTitleModal('Proyecto Burger Queen');
             setImgModal(coverBQ);
             setProjectInfo('Desarrollo de software gastronómico para restaurante de hamburgesas. Realizado en su totalidad por un equipo Front-end. Desarrollado con');
             setUsedTecnologies('React, Firebase, Javascript y CSS');

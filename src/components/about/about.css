@@ -1,14 +1,16 @@
 .about-container{
-    background-color: #F2EAD3;
+    background-color: #f8f9fa;
     width: 100%;
-    padding: 5%;
+    padding: 15%;
     box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 8%, 100% 100%, 0% 92%);
 }
 
 .about-container>h3{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Happy Monkey', cursive;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: .05rem;
     font-size: 1.25rem;
     line-height: 1.375rem;
     text-align: center;
@@ -118,6 +120,10 @@
         box-sizing: border-box;
     }
 
+    .about-container{
+        padding: 5%;
+    }
+    
     .about-container>h3{
         font-size: 1.5rem;
     }
@@ -134,7 +140,7 @@
     .photo-contact>img{
         width: 95%;
     }
-    
+
     .photo-contact>div{
         text-align: center;
     }

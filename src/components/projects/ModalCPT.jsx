@@ -12,7 +12,7 @@ const ModalCPT = (props) => {
                 <div>
                     <picture>
                         <source srcSet={props.img} />
-                        <img source={props.img} alt="preview comida para todos" />
+                        <img source={props.img} alt="preview" />
                     </picture>
                     <p>{props.info} <span>{props.tecnologies}</span>.</p>
                 </div>

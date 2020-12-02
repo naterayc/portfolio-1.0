@@ -2,10 +2,11 @@
     padding: 0 5% 15%;
 }
 
-.projects-section>h3{
-    font-family: 'Work Sans', sans-serif;
+.projects-section>h3{ 
+    font-family: 'Happy Monkey', cursive;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: .05rem;
     font-size: 1.25rem;
     line-height: 1.375rem;
     text-align: center;

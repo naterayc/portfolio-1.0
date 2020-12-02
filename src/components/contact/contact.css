@@ -4,9 +4,10 @@
 }
 
 .contact-container>h3{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Happy Monkey', cursive;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: .05rem;
     font-size: 1.25rem;
     text-align: center;
     color: #994D5B;

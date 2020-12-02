@@ -9,11 +9,9 @@ body{
 header{
     width: 100%;
     box-sizing: border-box;
-    background-image: url('../../img/back-mobile.png');
     height: 300px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #F2F2F2;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     padding: 2%;
 }
 
@@ -102,12 +100,17 @@ nav{
     margin-top: 10%;
 }
 
+.info-container>picture>img{
+    height:150px;
+}
+
 .info>h2{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Happy Monkey', cursive;
     font-style: normal;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.375rem;
+    letter-spacing: .06rem;
     color: #994D5B;
     margin-bottom: 2%;
     margin-top: 16%;
@@ -138,6 +141,7 @@ nav{
     font-size: 1.125rem;
     text-align: center;
     color: #333333;
+    background-color: #F2F2F2;
     width:60%;
     height: 40px;
 }
@@ -152,20 +156,19 @@ nav{
     }
 
     header{
-        background-image: url('../../img/back-desktop.png');
         height: 350px;
     }
 }
 
 @media (min-width:600px){
     header{
-        background-image: url('../../img/back-desktop.png');
-        height: 700px;
-        background-size: 100%;
-        background-position: top;
-        background-size: cover;
+        height: 650px;
     }
 
+    .info-container>picture>img{
+        height:500px;
+    }
+    
     .top-bar>svg{
         margin-left: 2%;
     }
@@ -214,11 +217,7 @@ nav{
 
 @media (min-width:800px){
     header{
-        background-image: url('../../img/back-desktop.png');
-        height: 950px;
-        background-size: 100%;
-        background-position: top;
-        background-size: cover;
+        height: 750px;
     }
 
     .top-bar>h1{
