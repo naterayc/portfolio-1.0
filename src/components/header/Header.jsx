@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, Fragment} from 'react';
 import './header.css';
 import img1 from '../../img/photo1-mobile.png';
 import img2 from '../../img/photo1-desktop.png';
@@ -20,6 +20,7 @@ const Header = (props) => {
     }
 
     return (
+        <Fragment>
         <header>
             <div className='top-bar'>
                 <Icon icon={menuIcon} onClick={openAside}/>
@@ -31,14 +32,6 @@ const Header = (props) => {
                         <li><Link to="contact" smooth={true} >Contacto</Link></li>
                     </ul>
                 </nav>
-            </div>
-            <div className="aside" ref={asideMenu}>
-                <Icon icon={xIcon} onClick={closeAside} />
-                <ul>
-                    <li><Link to="projects" smooth={true} onClick={closeAside}>Proyectos</Link></li>
-                    <li><Link to="about" smooth={true} onClick={closeAside}>Sobre mí</Link></li>
-                    <li><Link to="contact" smooth={true} onClick={closeAside}>Contacto</Link></li>
-                </ul>
             </div>
             <div className='info-container'>
                 <div className="info">
@@ -53,6 +46,15 @@ const Header = (props) => {
                 </picture>
             </div>
         </header>
+        <div className="aside" ref={asideMenu}>
+        <Icon icon={xIcon} onClick={closeAside} />
+        <ul>
+            <li><Link to="projects" smooth={true} onClick={closeAside}>Proyectos</Link></li>
+            <li><Link to="about" smooth={true} onClick={closeAside}>Sobre mí</Link></li>
+            <li><Link to="contact" smooth={true} onClick={closeAside}>Contacto</Link></li>
+        </ul>
+    </div>
+    </Fragment>
     );
 }
 

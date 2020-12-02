@@ -289,3 +289,10 @@ nav{
         outline:none;
         }
 }
+
+@media (min-width:1500px){
+    .info-container>picture>img {
+        box-sizing: border-box;
+        padding-bottom: 25%;
+    }
+}
