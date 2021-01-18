@@ -6,6 +6,8 @@ import nomadaPreview from '../../img/nomada-preview.png';
 import coverCPT from '../../img/cover-cpt.png';
 import coverBQ from '../../img/cover-bq.png';
 import coverNomada from '../../img/cover-nomada.png';
+import coverMdLinks from '../../img/cover-md-links.png';
+import mdLinksPreview from '../../img/md-links-preview.png';
 import ModalCPT from './ModalCPT';
 
 const Projects = () => {
@@ -59,6 +61,15 @@ const Projects = () => {
             setLinkToDemo('https://naterayc.github.io/SCL014-social-network/');
             setLinkToCode('https://github.com/naterayc/SCL014-social-network');
         }
+
+        if(e.target.alt === 'Md-links'){
+            setTitleModal('Markdown Links');
+            setImgModal(coverMdLinks);
+            setProjectInfo('Md-links, es una librería que se encanrga de leer archivos .md, encontrar los links existentes, contabilizarlos y verificar su estado. Desarrollada con');
+            setUsedTecnologies('Node.js, Javascript');
+            setLinkToDemo('https://www.npmjs.com/package/naterayc-md-links');
+            setLinkToCode('https://github.com/naterayc/SCL014-md-links');
+        }
         
         setShowModal(true);
     };
@@ -83,6 +94,12 @@ const Projects = () => {
                     <picture>
                         <source srcSet={nomadaPreview} />
                         <img source={nomadaPreview} alt="Nómada" />
+                    </picture>
+                </div>
+                <div onClick={openModal}>
+                    <picture>
+                        <source srcSet={mdLinksPreview} />
+                        <img source={mdLinksPreview} alt="Md-links" />
                     </picture>
                 </div>
             </div>

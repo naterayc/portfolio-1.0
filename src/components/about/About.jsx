@@ -25,7 +25,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about-info">
-                    <p>Mi enfoque como desarrolladora, se dirije hacia la creación de soluciones que permanezcan vigentes en el tiempo, sean innovadoras y eficientes.</p>
+                    <p>Mi enfoque como desarrolladora, se dirige hacia la creación de soluciones que permanezcan vigentes en el tiempo, sean innovadoras y eficientes.</p>
                     <p>Soy de rápido aprendizaje, por lo que constantemente adquiero nuevos conocimientos a fin de generar resultados de calidad y que se ajusten a las necesidades del cliente.</p>
                     <SoftSkills />
                     <TechSkills />
